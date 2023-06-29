@@ -12,3 +12,7 @@ test.skip("skip test", () => {
 test.only("only test", () => {
     console.log("使用only时,只允许带有only的测试可以运行，其他的都会跳过")
 });
+
+test.todo("todo test", () => {
+    console.log("使用todo来标记未进行的测试案例, 不会执行， 运行输出的结果带有 todo")
+});
